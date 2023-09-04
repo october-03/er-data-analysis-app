@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
   @State var nickname = ""
   @State var isNavigate = false
   @State var showingAlert = false
@@ -34,7 +34,7 @@ struct ContentView: View {
           })
         
           .navigationDestination(isPresented: $isNavigate) {
-            UserInfo(userName: nickname)
+            UserInfoView(userName: nickname)
           }
         Spacer()
       }
@@ -54,6 +54,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

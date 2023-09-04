@@ -11,7 +11,7 @@ import SwiftUI
 struct er_data_analysisApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

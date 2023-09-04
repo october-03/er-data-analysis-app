@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserInfo: View {
+struct UserInfoView: View {
   let userName: String
   
   init(userName: String) {
@@ -21,6 +21,6 @@ struct UserInfo: View {
 
 struct UserInfo_Previews: PreviewProvider {
     static var previews: some View {
-        UserInfo(userName: "또다시겨울ㅌ")
+        UserInfoView(userName: "또다시겨울ㅌ")
     }
 }
