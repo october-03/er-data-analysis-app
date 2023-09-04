@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct UserInfoView: View {
+  @ObservedObject private var userInfoVM: UserInfoViewModel
+  
   let userName: String
   
   init(userName: String) {
     self.userName = userName
+    self.userInfoVM = UserInfoViewModel()
   }
     
   var body: some View {
-      Text(userName)
+    Text(userName)
+      .onAppear {
+        userInfoVM.getUserInfo(userName)
+      }
   }
 }
 

@@ -9,6 +9,10 @@ import Foundation
 
 extension URL {
   static func getUserInfo(_ nickname: String) -> URL? {
-    return URL(string: "http://\(Constants.BASE_URL)/user/\(nickname)")
+    let urlStr = "http://\(Constants.BASE_URL)/user/\(nickname)"
+    let encoded = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+    let result = URL(string: encoded!)
+    
+    return result
   }
 }

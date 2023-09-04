@@ -16,6 +16,9 @@
 		946A6EB92AA5878500B3CF2F /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 946A6EB82AA5878500B3CF2F /* Secrets.plist */; };
 		946A6EBB2AA5882C00B3CF2F /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EBA2AA5882C00B3CF2F /* BundleExtensions.swift */; };
 		946A6EBD2AA5A12B00B3CF2F /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EBC2AA5A12B00B3CF2F /* URLExtensions.swift */; };
+		946A6EBF2AA5A4EC00B3CF2F /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EBE2AA5A4EC00B3CF2F /* ApiService.swift */; };
+		946A6EC12AA5A54700B3CF2F /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EC02AA5A54700B3CF2F /* UserInfoModel.swift */; };
+		946A6EC32AA5AADC00B3CF2F /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EC22AA5AADC00B3CF2F /* UserInfoViewModel.swift */; };
 		9480B70D2AA0455C00AD73FD /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480B70C2AA0455B00AD73FD /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		946A6EB82AA5878500B3CF2F /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		946A6EBA2AA5882C00B3CF2F /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		946A6EBC2AA5A12B00B3CF2F /* URLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		946A6EBE2AA5A4EC00B3CF2F /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		946A6EC02AA5A54700B3CF2F /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		946A6EC22AA5AADC00B3CF2F /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		9480B70C2AA0455B00AD73FD /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				946A6EB22AA583DF00B3CF2F /* Constants.swift */,
-				946A6EB82AA5878500B3CF2F /* Secrets.plist */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 		9425FA702AA57D1100AD7A87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				946A6EB82AA5878500B3CF2F /* Secrets.plist */,
 				946A6EBA2AA5882C00B3CF2F /* BundleExtensions.swift */,
 				946A6EBC2AA5A12B00B3CF2F /* URLExtensions.swift */,
 			);
@@ -85,6 +91,7 @@
 		9425FA712AA57D1B00AD7A87 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				946A6EBE2AA5A4EC00B3CF2F /* ApiService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 		9425FA722AA57D2200AD7A87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				946A6EC02AA5A54700B3CF2F /* UserInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 		9425FA732AA57D2700AD7A87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				946A6EC22AA5AADC00B3CF2F /* UserInfoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -279,9 +288,12 @@
 			files = (
 				94423A202AA01BFA0056D137 /* MainView.swift in Sources */,
 				946A6EBD2AA5A12B00B3CF2F /* URLExtensions.swift in Sources */,
+				946A6EC32AA5AADC00B3CF2F /* UserInfoViewModel.swift in Sources */,
+				946A6EC12AA5A54700B3CF2F /* UserInfoModel.swift in Sources */,
 				946A6EBB2AA5882C00B3CF2F /* BundleExtensions.swift in Sources */,
 				9480B70D2AA0455C00AD73FD /* UserInfoView.swift in Sources */,
 				94423A1E2AA01BFA0056D137 /* er_data_analysisApp.swift in Sources */,
+				946A6EBF2AA5A4EC00B3CF2F /* ApiService.swift in Sources */,
 				946A6EB32AA583DF00B3CF2F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
