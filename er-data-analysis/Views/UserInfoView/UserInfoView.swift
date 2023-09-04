@@ -18,7 +18,18 @@ struct UserInfoView: View {
   }
     
   var body: some View {
-    Text(userName)
+    GeometryReader { geometry in
+      ScrollView {
+        VStack{
+          if let userInfo = userInfoVM.userInfo {
+            ForEach(userInfo.gameUsers, id: \.id) { gameUser in
+              Text("\(gameUser.TeamKillCount) / \(gameUser.KillCount) / \(gameUser.DeathCount) / \(gameUser.AssistCount) / \(gameUser.AnimalKillCount)")
+            }
+          }
+        }
+        .frame(width: geometry.size.width)
+      }
+    }
       .onAppear {
         userInfoVM.getUserInfo(userName)
       }
