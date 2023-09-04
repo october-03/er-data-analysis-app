@@ -15,6 +15,7 @@
 		946A6EB32AA583DF00B3CF2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EB22AA583DF00B3CF2F /* Constants.swift */; };
 		946A6EB92AA5878500B3CF2F /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 946A6EB82AA5878500B3CF2F /* Secrets.plist */; };
 		946A6EBB2AA5882C00B3CF2F /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EBA2AA5882C00B3CF2F /* BundleExtensions.swift */; };
+		946A6EBD2AA5A12B00B3CF2F /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A6EBC2AA5A12B00B3CF2F /* URLExtensions.swift */; };
 		9480B70D2AA0455C00AD73FD /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480B70C2AA0455B00AD73FD /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		946A6EB22AA583DF00B3CF2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		946A6EB82AA5878500B3CF2F /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		946A6EBA2AA5882C00B3CF2F /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		946A6EBC2AA5A12B00B3CF2F /* URLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
 		9480B70C2AA0455B00AD73FD /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				946A6EBA2AA5882C00B3CF2F /* BundleExtensions.swift */,
+				946A6EBC2AA5A12B00B3CF2F /* URLExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94423A202AA01BFA0056D137 /* MainView.swift in Sources */,
+				946A6EBD2AA5A12B00B3CF2F /* URLExtensions.swift in Sources */,
 				946A6EBB2AA5882C00B3CF2F /* BundleExtensions.swift in Sources */,
 				9480B70D2AA0455C00AD73FD /* UserInfoView.swift in Sources */,
 				94423A1E2AA01BFA0056D137 /* er_data_analysisApp.swift in Sources */,
