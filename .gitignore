@@ -1,1 +1,5 @@
+Podfile.lock
+Pods
+*.xcworkspace
+
 *.xcuserstate
