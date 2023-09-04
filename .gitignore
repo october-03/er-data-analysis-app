@@ -4,3 +4,5 @@ Pods
 
 *.xcuserstate
 .DS_Store
+
+er-data-analysis/Utils/Secrets.plist
