@@ -12,7 +12,7 @@ extension Bundle {
     guard let file = self.path(forResource: "Secrets", ofType: "plist") else { return "" }
     
     guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
-    guard let key = resouce["BASE_URL"] as ? String else {fatalError("Secrets.plist에 BaseURL 설정을 해주세요.")}
+    guard let key = resource["BASE_URL"] as? String else {fatalError("Secrets.plist에 BaseURL 설정을 해주세요.")}
     return key
   }
 }
