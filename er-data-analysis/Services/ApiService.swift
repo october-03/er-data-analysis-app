@@ -12,11 +12,12 @@ enum APIError: Error {
   case badURL
   case noData
   case unknown
+  case badRequest
 }
 
 class ApiService {
-  func getUserInfo(nickname: String, completion: @escaping (Result<UserInfo, APIError>) -> Void) {
-    guard let url = URL.getUserInfo(nickname) else {
+  func getUserInfo(nickname: String, seasonId: Int, page: Int, completion: @escaping (Result<UserInfo, APIError>) -> Void) {
+    guard let url = URL.getUserInfo(nickname, seasonId, page) else {
       return completion(.failure(.badURL))
     }
     AF.request(url, method: .get)
@@ -31,7 +32,7 @@ class ApiService {
             completion(.failure(.unknown))
           }
         case .failure(_):
-          completion(.failure(.unknown))
+          completion(.failure(.badRequest))
         }
       })
   }

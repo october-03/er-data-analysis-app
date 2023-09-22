@@ -8,8 +8,8 @@
 import Foundation
 
 extension URL {
-  static func getUserInfo(_ nickname: String) -> URL? {
-    let urlStr = "http://\(Constants.BASE_URL)/user/\(nickname)"
+  static func getUserInfo(_ nickname: String, _ seasonId: Int, _ page: Int) -> URL? {
+    let urlStr = "http://\(Constants.BASE_URL)/user?nickname=\(nickname)&seasonId=\(seasonId)&page=\(page)"
     let encoded = urlStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
     let result = URL(string: encoded!)
     
